@@ -1,0 +1,45 @@
+
+
+<div role="main">
+  <div class = "container mt-5">
+    <form class="form-inlinem ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search" [(ngModel)]="term">
+    </form>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="page-header">
+        <h1>Personal Kit</h1>
+      </div>
+
+
+
+      <div class="row"  *ngFor="let it of item |filter:term">
+        <div class="col-md-6">
+          <div class="card mb-4 box-shadow">
+            
+            <div class="card-body ">
+              <div class = "container">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="{{it.image_url}}" class="img-rounded" style="width:100px; height:50px">
+                </div>
+                <p>{{it.description}}</p>
+                <p>{{it.size.details}}</p>
+                <div class="btn-group">
+                    <button class="btn btn-success" (click)="addToBasket(it.description)" >Add to Basket</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+  

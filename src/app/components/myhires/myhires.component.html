@@ -1,0 +1,177 @@
+<!-- <main role="main">
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row"  *ngFor="let hire of hires">
+          <div *ngIf = "hire.group_id === authTokenService.currentUserData.group_id">
+          <div class="col-12 mb-5">
+            <div class="card mb-12 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">{{hire.collect_date}}</p>
+                <p class="card-text">{{hire.return_date}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        
+  </main> -->
+
+
+<div class="container">
+	<div class="row">
+	  <div class="col-sm-10 col-sm-offset-1" id="logout">
+		  <div class="page-header">
+			    <h3 class="reviews">My Hires</h3>
+		  </div>
+		  
+			  <ul class="nav nav-tabs" role="tablist">
+				  <li class="active mr-5"><a href="#current" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Current</h4></a></li>
+				  <li><a href="#future" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize mr-5">Future</h4></a></li>
+				  <li><a href="#past" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize mr-5">Past</h4></a></li>
+			  </ul>            
+			  <div class="tab-content">
+				  <div class="tab-pane active" id="current">                
+					  <div class="row" >
+						  <div class="col-md-4">
+						    <div class="card mb-4 box-shadow">
+									<div class="card h-100">
+										<div class="card-body">
+                      <h2 class="card-title">No Current Hires!</h2>
+										</div>
+										
+									</div>
+						    </div>
+						  </div>
+						
+				
+					
+					  </div>   
+					</div>
+					
+
+				  <div class="tab-pane" id="future">
+				    <div class="row">
+						  <div class="col-md-4">
+								<div class="card h-100">
+									<div class="card-body">
+										<h2 class="card-title">Hire</h2>
+										<div class="card-text">
+											<p>Name: Katrina Luettgen</p>
+											<p>Collect_date: 02/05/2018</p>
+											<p>Return_date:  09/05/2018 </p>
+											<p>Reference: 1778792141</p>
+											<p>List of Orders:</p>
+												<select multiple class="form-control" >
+                          <option>Jacket - small x1</option>
+                          <option>Trousers - small x1</option>
+                          <option>Gloves x1</option>
+												</select>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a class="btn btn-primary">changes orders</a>
+									</div>
+								</div>
+							</div>
+						</div>	 
+					</div>
+					
+					
+				  <div class="tab-pane" id="past">
+					 <div class="row">
+						<div class="col-md-4">
+						  <div class="card mb-4 box-shadow">
+ 
+								<div class="card h-100">
+									<div class="card-body">
+										<h2 class="card-title">Group 1</h2>
+										<div class="card-text">
+											<p>ID:1</p>
+											<p>Collect_date:</p>
+											<p>Return_date:</p>
+											<p>Reference:</p>
+											<p>Invoice_number:</p>
+											<p>List of order:</p>
+												<select multiple class="form-control" >
+														<option>Jacket - small x1</option>
+														<option>Trousers - small x1</option>
+														<option>Gloves x1</option>
+												</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+						  <div class="card mb-4 box-shadow">
+ 
+								<div class="card h-100">
+									<div class="card-body">
+										<h2 class="card-title">Group 2</h2>
+										<div class="card-text">
+											<p>ID:2</p>
+											<p>Collect_date:</p>
+											<p>Return_date:</p>
+											<p>Reference:</p>
+											<p>Invoice_number:</p>
+											<p>List of order:</p>
+												<select multiple class="form-control" >
+														<option>Rucksack and Liner</option>
+														<option>Sleeping Bag</option>
+														<option>Fleece</option>
+														<option>Sun Hat</option>
+														<option>Warm Hat</option>
+												</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+						  <div class="card mb-4 box-shadow">
+ 
+								<div class="card h-100">
+									<div class="card-body">
+										<h2 class="card-title">Group 2</h2>
+										<div class="card-text">
+											<p>ID:2</p>
+											<p>Collect_date:</p>
+											<p>Return_date:</p>
+											<p>Reference:</p>
+											<p>Invoice_number:</p>
+											<p>List of order:</p>
+												<select multiple class="form-control" >
+														<option>Rucksack and Liner</option>
+														<option>Sleeping Bag</option>
+														<option>Fleece</option>
+														<option>Sun Hat</option>
+														<option>Warm Hat</option>
+												</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>  
+				  </div>
+			  </div>
+		</div> 
+	</div>
+	<hr>
+
+	<footer>
+	  <p>&copy; 2018 FOTA.</p>
+	</footer> 
+</div>

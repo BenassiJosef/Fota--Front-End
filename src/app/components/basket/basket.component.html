@@ -1,0 +1,241 @@
+<div>
+
+  <div>    
+          <h2>
+             &nbsp; Shopping Basket
+          </h2>
+   </div>
+  
+
+<div class="a-box-left"> 
+        <div>
+            <table  class="table invoice-table">
+                <thead>
+                   <tr>
+                        <th><h3>Item No</h3></th> 
+                        <th><h3>Quantity</h3></th>
+                        <th><h3>Price</h3></th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                          <td>
+                                  <div><strong>Jacket - small</strong>
+                                     <br/><br/>                                      
+                                  </div>
+                           </td>
+                         <td>                                              
+                           <div>                                     
+                             <span >
+                              <select>                       
+                           <option value="1">
+                                 1
+                              </option>
+                       
+                              <option value="2">
+                                2
+                             </option>
+                  
+                              
+                                 </select>
+
+                                 </span>
+
+                              <div>
+
+                                      <span>
+                                          <span class="a-button-inner">
+                                              <a class="a-button-text" role="button">
+                                             <br/>
+                          
+                                    </a></span></span>
+                                      </div>
+                                  </div>
+
+                         </td>
+
+                         <td>&pound;5.00</td>
+
+                         <td>
+                              <input type="submit" value="Remove" aria-label="Delete 00001 Jacket" class="btn btn-danger">
+                          </td>
+                        </tr>
+                       <tr>
+                        <td>
+                            <div><strong>Trousers - small</strong>
+                              <br/><br/>
+                                    
+                            </div>
+                        </td>
+                        <td>
+                              <div>
+                                     <span>
+                                      <select>                               
+                                    <option value="1" >
+                                          1
+                                       </option>
+                                
+                                       <option value="2">
+                                         2
+                                      </option>
+                                          </select>
+                                        </span>
+          
+                   
+                                       <div>
+                                         <span>
+                                             <span class="a-button-inner">
+                                                 <a  data-action="update" class="a-button-text" role="button" id="a-autoid-1-announce">
+                                            <br/>
+                                 
+                                             </a></span></span>
+                                               </div>
+                                           </div>
+
+                        </td>
+                        <td>&pound;5.00</td>
+                        <td>
+                              <input type="submit" value="Remove" aria-label="Delete 00002 Shoes" class="btn btn-danger">
+                          </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div><strong>Gloves - small</strong>
+                              <br/><br/>
+                               
+                            </div>
+                        </td>
+                        <td>
+
+                              <div>
+                                
+                                      <span>
+                                      <label><span>        
+                                      </span>
+                                      </label>
+                                      <select>
+                           
+                           
+                                    <option value="1"  selected="">
+                                          1
+                                       </option>
+                                
+                                       <option value="2">
+                                         2
+                                      </option>
+                           
+                                       <option value="3">
+                                         3
+                                     </option>
+                           
+                                     <option value="4">
+                                       4
+                                       </option>
+                           
+                                       <option value="5">
+                                           5
+                                        </option>
+                           
+                                        <option value="6">
+                                            6
+                                       </option>
+                           
+                                        <option value="7">
+                                         7
+                                        </option>
+                           
+                                        <option value="8">
+                                            8
+                                         </option>
+                           
+                                          <option value="9">
+                                                 9
+                                           </option>
+                           
+                                          <option value="10">
+                                           10+
+                                          </option>
+                                          </select>
+                                        </span>
+                   
+                                       <div>
+                                         <span>
+                                             <span>
+                                                 <a href="/itemdetail" class="a-button-text" role="button">
+                                             <br/><br/>
+                           
+                                      
+                                             </a>
+                                          </span>
+                                         </span>
+                                               </div>
+                                           </div>
+     
+
+
+                        </td>
+                        <td>&pound;5.00</td>
+                        <td>
+                              <input type="submit"  value="Remove" aria-label="Delete 00003 Rope" class="btn btn-danger">
+                          </td>
+                    </tr>
+
+                </tbody>
+                <br/><br/>
+                              
+                <tfoot>
+                      <tr>
+                      &nbsp;  &nbsp; &nbsp; &nbsp;
+                         <td><strong><h3>Total Price: £15 </h3></strong></td>
+                         <td>{{totalPrice()}}</td>
+                          <td>
+                                  <input type="submit" value="Remove All"  class="btn btn-danger">
+                              
+                          </td>
+                      </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+       
+
+</div>         
+        
+        
+
+
+
+
+
+
+
+<div class="a-box-inner">
+  <div class="a-section a-spacing-small a-text-center">
+   <br/>
+
+   <span class="a-size-medium a-text-bold">
+          <span>
+            Subtotal (3 item):
+          </span>        
+    <span class="a-size-medium a-color-price">£15</span>
+ </span>
+   
+  <br/><br/>
+  </div>
+
+   <div class="a-button-stack">
+          <span class="a-button-inner">
+              <input name="proceedToCheckout" class="a-button-input" type="submit" (click)="secureHire()" value="Secure Hire">
+          </span>
+   </div>
+   <br/>
+  <hr>
+</div>
+
+
+
+
+
+</div>

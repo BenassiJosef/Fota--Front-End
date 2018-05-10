@@ -1,0 +1,7 @@
+<header class ="masthead">
+<div align="center" *ngIf="authTokenService.currentUserData">
+ 
+  <img class="rounded-circle" src="/assets/img/profile_pic.png" alt="Generic placeholder image" width="250" height="250">
+  <h2 class = "mt-3 mb-3" style = "color:white">{{authTokenService.currentUserData.email}}</h2>
+</div>
+</header>
